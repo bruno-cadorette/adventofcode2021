@@ -33,6 +33,7 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -freduction-depth=0
     dependencies:
     - adventofcode2021
 
