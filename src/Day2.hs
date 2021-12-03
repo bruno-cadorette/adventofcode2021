@@ -73,15 +73,3 @@ proofPart1 = Refl
 proofPart2 :: Solve2 '(0,0,0) ExampleInput :~: 900
 proofPart2 = Refl
 
-
-
-
-data TypeInt = 
-    Positive Natural
-  | Negative Natural
-
-type family Add a b where
-  Add (Positive a) (Positive b) = Positive (a + b)
-  Add (Negative a) (Positive b) = If (a >? b) (Negative (a - b)) (Positive (b - a))
-  Add (Positive a) (Negative b) = Add (Negative b) (Positive a)
-  Add (Negative a) (Negative b) = Negative (a + b)
