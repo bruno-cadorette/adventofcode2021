@@ -103,8 +103,8 @@ part1Example = Refl
 --part2Example :: Solution2 5 (Parse ExampleInput) :~: 230
 --part2Example = Refl
 
-computePart2 :: Integer
-computePart2 = natVal (Proxy @(Solution2 12 (Parse Input))) 
+computePart1 :: Integer
+computePart1 = natVal (Proxy @(Solution1 12 (Input))) 
 
 -------- Input --------
 
